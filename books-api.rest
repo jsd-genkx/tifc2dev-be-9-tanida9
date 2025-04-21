@@ -1,0 +1,23 @@
+### Get all books
+GET http://localhost:3000/books
+Content-Type: application/json
+
+
+### Get books filtered by genre
+GET http://localhost:3000/books?genre=Dystopian
+Content-Type: application/json
+
+
+### Get a book by ID (existing)
+GET http://localhost:3000/books/1
+Content-Type: application/json
+
+
+### Get a book by ID (non-existing, 404)
+GET http://localhost:3000/books/9
+Content-Type: application/json
+
+
+### Test an unknown route (404)
+GET http://localhost:3000/unknown
+Content-Type: application/json
